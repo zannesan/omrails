@@ -18,7 +18,7 @@ group :assets do
 	gem 'uglifier', '>= 1.3.0'
 	gem 'turbolinks', '~> 2.2.1'
 	gem 'rails_12factor'
-	gem 'heroku'
+	gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 end
 
 
