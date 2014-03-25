@@ -17,6 +17,7 @@ group :assets do
 	gem 'coffee-rails', '~> 4.0.0'
 	gem 'uglifier', '>= 1.3.0'
 	gem 'turbolinks'
+	gem 'rails_12factor'
 end
 
 
