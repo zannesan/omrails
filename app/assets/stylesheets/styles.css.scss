@@ -1,0 +1,27 @@
+/*$baseFontFamily: Oxygen;
+@import url();#*/
+
+$btn-primary-bg: green;
+$navbar-default-bg: white;
+$navbar-default-border: white;
+$navbarBackground: white;
+
+@import 'bootstrap';
+
+body {
+	padding-top: 60px;
+}
+
+.navbar-inner {
+	@include box-shadow(none !important);
+	border: 0;
+
+}
+.footer {
+
+	margin-top: 50px;
+	color: $gray;
+	a {
+		color: $gray;
+	}
+}
