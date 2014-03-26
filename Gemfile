@@ -18,7 +18,7 @@ group :development, :test do
 	gem 'therubyracer'
 end
 
-group :assets, do
+group :assets do
 	gem 'sqlite3'
 	gem 'sass-rails', '~> 4.0.2'
 	gem 'coffee-rails', '~> 4.0.0'
@@ -27,6 +27,4 @@ group :assets, do
 	gem 'bootstrap-sass', '~> 3.1.1.0'
 	gem 'therubyracer'
 end
-
-
 
