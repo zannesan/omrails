@@ -15,7 +15,9 @@
 /log/*.log
 /tmp
 doc/
-*.swp*~ 
+*.swp
+*~ 
 .project 
 .idea
 .DS_Store
+/public/assets
