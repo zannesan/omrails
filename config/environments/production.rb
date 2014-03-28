@@ -28,7 +28,6 @@ Omrails::Application.configure do
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = true
-  config.assets.initialize_on_precompile = true
   
 
   # Generate digests for assets URLs.
@@ -79,4 +78,8 @@ Omrails::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  config.action_mailer.default_url_options = { host: 'localhost:3000' }
+
+     #In production, :host should be set to the actual host of your application.
 end
