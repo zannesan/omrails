@@ -5,3 +5,14 @@
  *= require_self
  *= require_tree .
 */
+@import "bootstrap";
+@import "bootstrap/theme";
+
+
+ //= require_self
+ //= require_tree .
+  //= require "bootstrap";  
+  //= require jquery.ui.all
+
+
+ 

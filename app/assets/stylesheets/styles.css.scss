@@ -1,22 +1,26 @@
 /*$baseFontFamily: Oxygen;
 @import url();#*/
 
+@import "bootstrap";
+@import "bootstrap/theme";
+
+
 $btn-primary-bg: green;
 $navbar-default-bg: white;
 $navbar-default-border: white;
 
-
-@import 'bootstrap';
-
-body {
-	padding-top: 60px;
-}
 
 .navbar-inner {
 	@include box-shadow(none !important);
 	border: 0;
 
 }
+
+body {
+
+	padding-top: 60px;
+}
+
 .footer {
 
 	margin-top: 50px;
