@@ -16,6 +16,7 @@ gem 'therubyracer'
 gem 'json', '>= 1.8.1'
 gem 'racc'
 gem 'jquery-ui-rails'
+gem 'paperclip', github: 'thoughtbot/paperclip' 
 
 
 
