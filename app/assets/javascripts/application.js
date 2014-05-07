@@ -14,6 +14,7 @@
 // Loads all Bootstrap javascripts
 //= require bootstrap
 //= require jquery
+//=require masonry.pkgd.min.js
 //= require jquery.ui.all
 //= require jquery_ujs
 //= require_tree .
