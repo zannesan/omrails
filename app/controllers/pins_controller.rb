@@ -3,6 +3,7 @@ class PinsController < ApplicationController
   before_action :correct_user, only: [:edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
  
+ 
   # GET /pins
   def index
     @pins = Pin.order("created_at desc")
