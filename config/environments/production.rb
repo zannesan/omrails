@@ -80,6 +80,16 @@ Omrails::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   config.action_mailer.default_url_options = { host: 'localhost:3000' }
+  
+  # config Amazon S3 for paperclip fil uploads
+  config.paperclip_defaults = {
+  :storage => :s3,
+  :s3_credentials => {
+    :bucket => ENV['OMR-SS'],
+    :access_key_id => ENV['AKIAJC5N74GIWS4UGR4A'],
+    :secret_access_key => ENV['QIU4jO74xf8zoQsOeiaUkFximK5Vf1vEQtEQ22u1']
+  }
+}
 
      #In production, :host should be set to the actual host of your application.
 end
