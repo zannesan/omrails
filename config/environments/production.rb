@@ -86,8 +86,8 @@ Omrails::Application.configure do
   :storage => :s3,
   :s3_credentials => {
     :bucket => ENV['OMR-SS'],
-    :access_key_id => ENV['AKIAJC5N74GIWS4UGR4A'],
-    :secret_access_key => ENV['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']
+    :access_key_id => ENV[''],
+    :secret_access_key => ENV['']
   }
 }
 
