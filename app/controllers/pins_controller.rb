@@ -1,39 +1,3 @@
-lass PinsController < ApplicationController
-  before_filter :authenticate_user!, except: [:index]
-
-  # GET /pins
-  # GET /pins.json
-  def index
-    @pins = Pin.order("created_at desc").page(params[:page]).per_page(20)
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @pins }
-      format.js
-    end
-  end
-
-  # GET /pins/1
-  # GET /pins/1.json
-  def show
-    @pin = Pin.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @pin }
-    end
-  end
-
-  # GET /pins/new
-  # GET /pins/new.json
-  def new
-    @pin = current_user.pins.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @pin }
-    end
-  end
 
   # GET /pins/1/edit
   class PinsController < ApplicationController
