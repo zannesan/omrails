@@ -1,8 +1,10 @@
 Omrails::Application.routes.draw do
+  get "users/show"
   resources :pins
 
   devise_for :users
- #devise_for : users
+  match 'users/:id' => 'users#show', as: :user, via: [:get, :post]
+ 
   devise_scope :user do
   match '/users/sign_out' => 'sessions#destroy', via: [:get, :delete]
 end
