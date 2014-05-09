@@ -2,10 +2,10 @@ namespace :db do
   desc "Fill database with sample data"
   task populate: :environment do
     6.times do |n|
-    	puts "[DEBUG] creating user #{n+3} of 6"
+    	puts "[DEBUG] creating user #{n+1} of 6"
       
       name = Faker::Name.name
-      email = "user-#{n+3}@example.com"
+      email = "user-#{n+1}@example.com"
       password = "password"
       User.create!( name: name,
                     email: email,
