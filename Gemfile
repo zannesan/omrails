@@ -18,6 +18,7 @@ gem 'racc'
 gem 'jquery-ui-rails'
 gem 'paperclip', github: 'thoughtbot/paperclip' 
 gem 'aws-sdk'
+gem 'faker', '1.1.2'
 
 
 
